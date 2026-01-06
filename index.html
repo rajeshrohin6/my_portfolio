@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="portfolio_style.css" type="text/css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohin Rajesh Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/3f330270cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div id = "header">
+    <div class="container">
+        <nav>
+            <img src="portfolio/portfolio_logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#about">Skills</a></li>
+                <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Engineer</p>
+            <h1>Rohin Rajesh</h1>
+        </div>
+    </div>
+</div>
+
+
+
+<!---------- About ---------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="portfolio/me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Eagle Scout, leader, and student studying mechanical engineering at the University of Texas at Austin. 
+                    Engaged in research concerning spark plug degradation under Dr. Matthew Hall with the UT Engine Group. 
+                    Leading a team of 15 structures members in Texas Flight (DBF) to manufacture the April 2026 competition plane. 
+                    Experience with composite materials and advanced materials manufacturing methods. 
+                    Leading the machine shop team with experience in milling, lathing, and CNC operations. 
+                    Perform student trainings in the Machine Shop, DFAB, and Laser Cutting spaces at Texas Inventionworks. 
+                    Versed in Python, JavaScript, HTML/CSS. Skilled in leadership, teambuilding, and organization.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>                                        
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><strong>Durable Skills</strong></span></li>
+                        <li>Project Management</li>
+                        <li>Leadership</li>
+                        <li>Problem Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Effective Communication</li>
+                        <li>Time Management</li>
+                        <li>Adaptability</li>
+                        <li>Creativity</li>
+                    </ul>
+                    
+                    <ul>
+                        <li><span><strong>Technical Skills</strong></span></li>
+                        <li>3D CAD Modeling/3D Printing</li>
+                        <li>Prototyping</li>
+                        <li>Composites/Advanced Materials</li>
+                        <li>Precision Machining</li>
+                        <li>Quantitative Analysis</li>
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>Soldering</li>
+                        <li>Laser Cutting</li>
+                        <li>Microsoft Suite</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Aug. 2024 - Present</span><br>Undergraduate Research - UT Engine Group</li>
+                        <li><span>Dec. 2024 - Present</span><br>Student Assistant - Texas Inventionworks</li>
+                        <li><span>May 2025 - Present</span><br>Structures Lead - Texas Flight</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug. 2024 - May 2028</span><br>BS Mechanical Engineering - The University of Texas at Austin</li>
+                        <li><span>Aug. 2024 - Dec. 2028</span><br>Business Foundations Minor - The University of Texas at Austin</li>
+                        <li><span>Aug. 2020 - May 2024</span><br>Clear Lake High School</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+
+</div>
+
+<!-- 
+the tablinks variable takes in the 3 <p> elements from when the class name has "tab-links" in it.
+the tabcontents variable has the 3 <div> elements from when the class name has "tab-contents" in it.
+
+the function opentab takes in the tabname 'skills', 'experience', or 'education' depending on which tab user clicks.
+the for loop goes through all 3 <p> elements to remove the "active-link" part of the class name.
+the second for loop goes through all 3 <div> elements to remove the "active-tab" part of the class name.
+now, based on the event that's running, 
+    currentTarget takes the element of that event, 
+    classList gets us the name of the class for that element
+    "active-link" gets added to the class name.
+lastly, getElementById gets the <div> element associated with the tabname ID and adds "active-tab" to it.
+    from here, CSS gives the class w/ "active-link" a 50% width rectange and displays the contents of the class w/ "active-tab"
+-->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<!---------- Experience Images ---------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Experience</h1>
+        <div class = "exp_container">
+            <div class="work-list">
+                <div class="work active-work" onclick="openwork('pen')">
+                    <img src="portfolio/proj_pics/completed_pen.jpg">
+                    <div class="layer">
+                        <h3>
+                            Clickable Brass Pen
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('macropad')">
+                    <img src="portfolio/proj_pics/macropad_top.jpg">
+                    <div class="layer">
+                        <h3>
+                            Macropad Keyboard Extension
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('plane')">
+                    <img src="portfolio/proj_pics/plane.jpg">
+                    <div class="layer">
+                        <h3>
+                            RC Plane Composites
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('engine')">
+                    <img src="portfolio/proj_pics/single_cylinder.jpg">
+                    <div class="layer">
+                        <h3>
+                            Undergraduate Research
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('earbuds')">
+                    <img src="portfolio/proj_pics/earbuds_front.jpg">
+                    <div class="layer">
+                        <h3>
+                            Wired Earbud Case
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('cnc')">
+                    <img src="portfolio/proj_pics/cnc_stock.jpg">
+                    <div class="layer">
+                        <h3>
+                            Aluminum Ball in Cube
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+<!---------- Experience Work Descriptions ---------->
+
+            <div class = "work-desc-list">
+                <div class = "desc active-desc" id = "pen">
+                    <h3>11/03/2025 - 12/08/2025</h3>
+                    <br>
+                    <h2> Clickable Brass Pen </h2>
+                    <br>
+                    <p>Overview: I designed and manufactured a clickable pen out of brass as an instructable project for the Texas Inventionworks [TIW] Machine Shop.
+                        An instructable is a project that student staff at TIW can create along with instructions for interested students to build for themselves.
+                        Once all documentation has been created, projects are then added to the display case for students to observe along with QR codes linked to the instructions.
+                        <br>
+                        <br>
+                        The instructable for this project is linked here: __________________ <br>
+                        <br>
+                        Since I created this from scratch, it required several iterations during the design process to ensure a reliable clicking mechanism.<br>
+                        <br>
+                        The CAD and drawing sheets for the final version were developed in SolidWorks are linked here: ____________________ <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [Bambu P1P, PLA], Prototyping, Precision Machining</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "macropad">
+                    <h3>03/03/2025 - 04/07/2025</h3>
+                    <br>
+                    <h2> Macropad Keyboard Extension </h2>
+                    <br>
+                    <p>Overview: <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks, OnShape], 3D Printing [Bambu P1P, PETG], Prototyping, Soldering, Laser Cutting</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "plane">
+                    <h3>08/25/2024 - Present</h3>
+                    <br>
+                    <h2> RC Plane Composites </h2>
+                    <br>
+                    <p>Overview: <br>
+                    </p>
+                    <p><br>Durable Skills Used: Project Management, Leadership, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [Raise3D, PETG], Prototyping, Composites/Advanced Materials, Laser Cutting, Microsoft Suite</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "engine">
+                    <h3>08/26/2024 - Present</h3>
+                    <br>
+                    <h2> Undergraduate Research </h2>
+                    <br>
+                    <p>Overview:
+                        <br>
+                        </p>
+                    <p><br>Durable Skills Used: Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
+                    <br>
+                    <p>Technical Skills Used: Quantitative Analysis, MATLAB, Soldering, Microsoft Suite</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "earbuds">
+                    <h3>10/07/2024 - 11/13/2024 </h3>
+                    <br>
+                    <h2> Wired Earbuds Case </h2>
+                    <br>
+                    <p>Overview: <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [Bambu P1P, PLA], Prototyping</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "cnc">
+                    <h3>10/04/2025 - 10/30/2025 </h3>
+                    <br>
+                    <h2> Aluminum Ball in Cube </h2>
+                    <br>
+                    <p>Overview: <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
+                    <br>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 
+the work_imgs variable takes in the 6 <div> elements from when the class name has "work" in it.
+the work_descs variable has the 6 <div> elements from when the class name has "desc" in it.
+
+the function openwork takes in the work id 'pen', 'macropad', 'plane', 'engine', 'earbuds', or 'cnc' depending on which work user clicks.
+the first for loop goes through all 6 work <div> elements to remove the "active-work" part of the class name.
+the second for loop goes through all 6 desc <div> elements to remove the "active-desc" part of the class name.
+now, based on the event that's running, 
+    currentTarget takes the element of that event, 
+    classList gets us the name of the class for that element
+    "active-work" gets added to the class name.
+lastly, getElementById gets the <div> element associated with the desc ID and adds "active-desc" to it.
+    from here, CSS gives the class w/ "active-work" a 100% height layer and displays the contents of the class w/ "active-desc"
+-->
+
+<script>
+
+    var work_imgs = document.getElementsByClassName("work");
+    var work_descs = document.getElementsByClassName("desc");
+    
+    function openwork(work_id){
+        for(work_img of work_imgs){
+            work_img.classList.remove("active-work");
+        }
+        for(work_desc of work_descs){
+            work_desc.classList.remove("active-desc");
+
+        }
+        event.currentTarget.classList.add("active-work");
+        document.getElementById(work_id).classList.add("active-desc")
+    }
+
+</script>
+
+<!---------- Contact Me ---------->
+<div id="contact">
+    <div class = "container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <br>
+                <br>
+                <p class = "email">rrajesh195@outlook.com</p>
+                <br>
+                <p class = "number">832-214-8224</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
