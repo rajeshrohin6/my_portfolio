@@ -188,7 +188,8 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     flex-direction: column;
-    grid-gap: 40px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
     margin-top: 50px;
     padding: 20px;
 }
@@ -243,7 +244,6 @@ nav ul li a:hover::after{
 }
 
 .work:hover .layer{
-    width: 100%;
     height: 100%;
 }
 
@@ -270,3 +270,55 @@ nav ul li a:hover::after{
     position: absolute;
     margin-top: 50%;
 }
+
+/* ---------- CSS for Small Screens ---------- */
+
+@media only screen and (max-width: 1000px){
+    #header{
+        background-image: url(portfolio/longhorn_symbol.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+
+    }
+    .work-desc-list{
+        margin-top: 50px;
+        width: 60%;
+        padding: 0px;
+    }
+    .work-list{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, auto);     
+        flex-direction: column;   
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        padding: 20px;
+        height: 50%;
+        width: 30%;
+    }
+    .layer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        cursor: pointer;
+}
+    .layer h3{
+        font-weight: 600;
+        font-size: 10px;
+        margin-bottom: 20px;
+}
+}
+
