@@ -1,3 +1,13 @@
+<!--
+
+first link connects the css file portfolio_style.css to this html file
+UTF-8 is a character set that includes basically all characters so I can use special characters if i want
+viewport sets the width of the screen to the width of the device so it can open cleanly on mobile devices too
+title sets the browser tab to Rohin Rajesh Portfolio
+the next 4 lines are all for loading the fonts which I got a free kit for from fontawesome
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,15 +25,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
+
+<!--
+header creates an outer container for the top section of the page
+nav contains the list of all containers in the website. the href code implies that when clicked the website will scroll to that container
+
+-->
+
 <body>
 <div id = "header">
-    <div class="container">
+    <div class = "container">
         <nav>
-            <img src="portfolio/portfolio_logo.png" class="logo">
+            <img src="portfolio/portfolio_logo2.png" class="logo">
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#about">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -34,8 +51,6 @@
         </div>
     </div>
 </div>
-
-
 
 <!---------- About ---------->
 
@@ -163,7 +178,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <img src="portfolio/proj_pics/plane.jpg">
                     <div class="layer">
                         <h3>
-                            RC Plane Structures/Composites - Texas Flight
+                            RC Plane Structures / Composites - Texas Flight
                         </h3>
                     </div>
                 </div>
@@ -195,7 +210,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <img src="portfolio/proj_pics/gauge_resting.jpg">
                     <div class="layer">
                         <h3>
-                            Go/No-Go Gauge - GD 2026 Intern
+                            Go / No-Go Gauge - GD 2026 Intern
                         </h3>
                     </div>
                 </div>
@@ -203,7 +218,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <img src="portfolio/proj_pics/mold_prep_tool_resting.JPG">
                     <div class="layer">
                         <h3>
-                            Mold Preparation Extension Tool - GD 2026 Intern
+                            Mold Prep Extension Tool - GD 2026 Intern
                         </h3>
                     </div>
                 </div>
@@ -244,6 +259,34 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
 <!---------- Experience Work Descriptions ---------->
 
             <div class = "work-desc-list">
+                <div class = "desc active-desc" id = "plane">
+                    <h3> 08/25/2024 - 05/04/2026 </h3>
+                    <br>
+                    <h2> RC Plane Composites </h2>
+                    <br>
+                    <p>Overview: Texas Flight is UT Austin's Design, Build, Fly [DBF] team that competes in AIAA's international RC plane competition.
+                        As a member of the structures team on Texas Flight from Aug. 2024 - May 2025, I worked with a team of 10 in performing composite wet layups for the fuselage and landing gear.
+                        Additionally, I prototyped a nose gear for the plane to support the nearly 50lb weight during mission 3 with payload. 
+                        <br>
+                        <br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/plane_maingear.jpg">
+                        <img src="portfolio/proj_pics/plane_gear_assembly.jpg">
+                        <img src="portfolio/proj_pics/plane_fuselagelayup.jpg">
+                    </div>
+                        <br>
+                        We placed 6th internationally out of 112 teams in April 2025, putting us in the top 5%.
+                        The following year, from Aug. 2025 - May 2026, I served as the Structures Lead leading a team of 15 in manufacturing the fuselage, landing gear, and nose gear of the plane.
+                        I worked with the Chief Engineer and CAD lead to design a plane that not just meets competition guidelines but scores exceptionally in all 3 missions.
+                        Additionally, I owned the design of the aluminum-based, CFRP-supported nose gear of the plane with a single-strut suspension system serving to alleviate high landing forces.
+                        <br>
+                        <br>
+                    </p>
+                    <p>Durable Skills Used: Project Management, Leadership, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [CFRP, PLA, PETG], Composites/Advanced Materials, Prototyping, Laser Cutting, Microsoft Suite</p>
+                    <br>
+                </div>
                 <div class = "desc" id = "pen">
                     <h3> 11/03/2025 - 12/08/2025 </h3>
                     <br>
@@ -267,7 +310,134 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     </p>
                     <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [Bambu P1P, PLA], Prototyping, Precision Machining</p>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Precision Machining, Prototyping</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "engine">
+                    <h3> 08/26/2024 - Present </h3>
+                    <br>
+                    <h2> Undergraduate Research </h2>
+                    <br>
+                    <p>Overview: Working with a team of 5 under my Thermodynamics Professor Dr. Matthew Hall, I have worked on two research projects.
+                        For our first project, we were tasked with determining the most efficient running conditions of the UT Engine Group's single-cylinder gasoline engine.
+                        Using a National Instruments LabView program, we modified the spark timing, dwell time, air-fuel ratio, fuel injection timing and duration, and the mean effective pressure.
+                        For our second and current project, we are analyzing the current breakdown event of spark plugs under pressurized conditions to determine degradation mitigation strategies.
+
+                        <br>
+                        <br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/research_prof.jpg">
+                        <img src="portfolio/proj_pics/research_dual.jpg">
+                        <img src="portfolio/proj_pics/research_plugs.jpg">
+                    </div>
+                        <br>
+                        Throughout the research process, we dealt with several issues including the spark plug firing on the wrong edge of the engine stroke, LabView connection failures, the flywheel falling out of callibration, and engine knocking.
+                        Equipped with a stroboscopic light, digital osciloscope, encoders, a manometer, and pressure transducer, we were able to troubleshoot these problems using root cause analysis methods.
+                        For our first experiment, we changed the duration of the fuel injection, ultimately varying the air-fuel ratio.
+                        In our second experiment, we changed the spark control timing using a sweep procedure. 
+                        Ultimately, we presented our findings at FIRE's annual conference to a group of researchers and engineering professors. 
+                        <br>
+                        <br>
+                        Currently, I am engaged in a research project where we are analyzing the current breakdown event of spark plugs under pressurized conditions
+                        to determine degradation mitigation strategies.
+                        This project is aiding an ongoing research project led by Gabriel Brito under Dr. Matthew Hall. 
+                        <br>
+                        </p>
+                    <p><br>Durable Skills Used: Project Management, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
+                    <br>
+                    <p>Technical Skills Used: Quantitative Analysis, Root-Cause Analysis, MATLAB, Soldering, Microsoft Suite</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "suction">
+                    <h3> 07/09/2026 - 08/07/2026 </h3>
+                    <br>
+                    <h2> Suction Valve Release Mechanism - GD 2026 Internship </h2>
+                    <br>
+                    <p>Overview: I designed a release mechanism used after factory workers complete a fitment test which separates the suction valve from the valve body while preserving the suction valve 
+                        and avoiding a stored-energy release hazard caused by the previous removing technique.
+                        <br><br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/suction_top.jpg">
+                        <img src="portfolio/proj_pics/jaw_displacement.png">
+                        <img src="portfolio/proj_pics/suction_team1.png">
+                    </div>
+                        <br>
+                    Problem: Removing the suction valve insert from the suction valve after performing a fitment test is a stored-energy release concern if done using the previous procedure which was to pry it off with a putty knife. 
+                        <br><br>
+                    Goal: Develop a tool that can safely separate the suction valve from the valve body post-fitment test and preserve the suction valve. 
+                        <br><br>
+                    Product: 6-Jaw carbon-steel lever release mechanism. Worker applies downward force using the arbor press to an aluminum puck which uniformly presses on the jaws, creating a moment
+                    which levers the suction valve off of the valve body and into the cavity inside the aluminum puck. 
+                        <br><br>
+                    Takeaways: Ease of use is critical, as the workers will be using this mechanism for every fitment test several times a day. To improve this, I designed and 3D printed a 
+                    jacket out of PETG that fits around the jaw, creating a flat surface to use a soft-blow mallet on to drive the jaw into the crevice easily. 
+                    Additionally, I conducted a solids analysis of the jaws, determining the forces it will undergo, and plugged these into the FEA. Once I got the FEA's max displacement value, 
+                    I conducted a deformation analysis to see if the displacement value from the FEA was within the elasticity region of the jaw. 
+                        <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], 3D CAM [SolidCAM], Additive Manufacturing [PETG], Precision Machining, Prototyping</p>
+                </div>
+                <div class = "desc" id = "gauge">
+                    <h3> 06/11/2026 </h3>
+                    <br>
+                    <h2> Go/No-Go Gauge - GD 2026 Internship </h2>
+                    <br>
+                    <p>Overview: I designed a tolerance-checking go/no-go gauge which workers use to test whether parts are meeting spec throughout their shift.
+                        This project was assigned to me immediately after the molds were reworked, so I completed the design and sent it for manufacturing by the end of that same day.
+                        <br><br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/gauge_resting.jpg">
+                        <img src="portfolio/proj_pics/gauge_drawing.png">
+                        <img src="portfolio/proj_pics/gauge_action.jpg">
+                    </div>
+                        <br>
+                    Problem: Haliburton rejected 73 suction valve inserts produced by the injection molding machines at Plant 27. 
+                    Molds for the single-cavity and 8-cavity Haitian machines were reworked to the low-end of the tolerance to solve the issue, 
+                    but we needed a way for workers to quickly visually inspect these new parts before sending them to Haliburton as individually scanning each part would significantly backlog production.
+                        <br><br>
+                    Goal: Create an instrument for factory workers in plastics to visually inspect the +0.000, -0.005 tolerance on the 0.180" dimension of the Z1290-6678K part 
+                    that fits onto Haliburton's fluid end valve bodies before shipping them.
+                        <br><br>
+                    Product: Designed and manufactured an Aluminum Go/No-Go Gauge that workers now use to check the 0.180 dimension of the Z1290-6678K parts coming out of the injection molding machines.
+                        <br><br>
+                    Takeaways: Ease of use, manufacturability, and working under a tight deadline. Designed the gauge to follow the same structure of a toothbrush, making it ergonomic and easy for workers to use.
+                    The gauge had to be designed immediately as an audit was being conducted the next day and there needed to be an inspection method in place to show control of this dimension.
+                        <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
+                    <br>
+                </div>
+                <div class = "desc" id = "mold">
+                    <h3> 06/22/2026 - 07/24/2025 </h3>
+                    <br>
+                    <h2> Mold Preparation Extension Tool - GD 2026 Internship </h2>
+                    <br>
+                    <p>Overview: I designed a 2-in-1 standardized tool for factory workers to prepare the mold for composite compression molding while preventing future near-miss incidents.
+                        <br><br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/mold_prep_tool_resting.JPG">
+                        <img src="portfolio/proj_pics/press_bottom.png">
+                        <img src="portfolio/proj_pics/press_top.png">
+                    </div>
+                        <br>
+                    Problem: Workers walking behind the press to brush the mold between cycles is a near-miss for damaging the complex pneumatic system.
+                        <br><br>
+                    Goal: Create an extension tool for the wire brushes used in the press shop that enables workers to clean the mold from the front and side without going behind the press
+                    while also being lightweight, durable, heat-resistant, and adjustable.
+                        <br><br>
+                    Product: Aluminum-based extension tool with 3 adjustable lengths to access the front and back of the mold cavities without interfering with the plumbing behind the press.
+                        <br><br>
+                    Takeaways: Weight reduction for this tool was critical since the workers will be using this tool every 10 minutes. For the standardized version of this tool,
+                    it will be made from PEEK, a thermoplastic with high heat-resistance and roughly half the density of aluminum. Additionally, the inner rod will be hollowed for further weight reduction.
+                        <br>
+                    </p>
+                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
                     <br>
                 </div>
                 <div class = "desc" id = "macropad">
@@ -296,68 +466,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     </p>
                     <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks, OnShape], 3D Printing [Bambu P1P, PETG], Prototyping, Soldering, Laser Cutting</p>
-                    <br>
-                </div>
-                <div class = "desc active-desc" id = "plane">
-                    <h3> 08/25/2024 - 05/04/2026 </h3>
-                    <br>
-                    <h2> RC Plane Composites </h2>
-                    <br>
-                    <p>Overview: Texas Flight is UT Austin's Design, Build, Fly [DBF] team that competes in AIAA's international RC plane competition.
-                        As a member of the structures team on Texas Flight from Aug. 2024 - May 2025, I worked with a team of 10 in performing composite wet layups for the fuselage and landing gear.
-                        Additionally, I prototyped a nose gear for the plane to support the nearly 50lb weight during mission 3 with payload. 
-                        <br>
-                        <br>
-                    <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/plane_maingear.jpg">
-                        <img src="portfolio/proj_pics/plane_gear_assembly.jpg">
-                        <img src="portfolio/proj_pics/plane_fuselagelayup.jpg">
-                    </div>
-                        <br>
-                        We placed 6th internationally out of 112 teams in April 2025, putting us in the top 5%.
-                        The following year, from Aug. 2025 - May 2026, I served as the Structures Lead leading a team of 15 in manufacturing the fuselage, landing gear, and nose gear of the plane.
-                        I worked with the Chief Engineer and CAD lead to design a plane that not just meets competition guidelines but scores exceptionally in all 3 missions.
-                        Additionally, I owned the design of the aluminum-based, CFRP-supported nose gear of the plane with a single-strut suspension system serving to alleviate high landing forces.
-                        <br>
-                        <br>
-                    </p>
-                    <p>Durable Skills Used: Project Management, Leadership, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [CFRP, PLA, PETG], Prototyping, Composites/Advanced Materials, Laser Cutting, Microsoft Suite</p>
-                    <br>
-                </div>
-                <div class = "desc" id = "engine">
-                    <h3> 08/26/2024 - Present </h3>
-                    <br>
-                    <h2> Undergraduate Research </h2>
-                    <br>
-                    <p>Overview: Working with a team of 5 under my Thermodynamics Professor Dr. Matthew Hall, I have worked on two research projects.
-                        For our first project, we were tasked with determining the most efficient running conditions of the UT Engine Group's single-cylinder gasoline engine.
-                        Using a National Instruments LabView program, we modified the spark timing, dwell time, air-fuel ratio, fuel injection timing and duration, and the mean effective pressure.
-                        <br>
-                        <br>
-                    <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/research_prof.jpg">
-                        <img src="portfolio/proj_pics/research_dual.jpg">
-                        <img src="portfolio/proj_pics/research_plugs.jpg">
-                    </div>
-                        <br>
-                        Throughout the research process, we dealt with several issues including the spark plug firing on the wrong edge of the engine stroke, LabView connection failures, the flywheel falling out of callibration, and engine knocking.
-                        Equipped with a stroboscopic light, digital osciloscope, encoders, a manometer, and pressure transducer, we were able to troubleshoot these problems using root cause analysis methods.
-                        For our first experiment, we changed the duration of the fuel injection, ultimately varying the air-fuel ratio.
-                        In our second experiment, we changed the spark control timing using a sweep procedure. 
-                        Ultimately, we presented our findings at FIRE's annual conference to a group of researchers and engineering professors. 
-                        <br>
-                        <br>
-                        Currently, I am engaged in a research project where we are analyzing the current breakdown event of spark plugs under pressurized conditions
-                        to determine degradation mitigation strategies.
-                        This project is aiding an ongoing research project led by Gabriel Brito under Dr. Matthew Hall. 
-                        <br>
-                        </p>
-                    <p><br>Durable Skills Used: Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: Quantitative Analysis, MATLAB, Soldering, Microsoft Suite</p>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks, OnShape], Additive Manufacturing [PETG], Prototyping, Soldering, Laser Cutting</p>
                     <br>
                 </div>
                 <div class = "desc" id = "earbuds">
@@ -366,7 +475,12 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <h2> Wired Earbuds Case </h2>
                     <br>
                     <p>Overview: This project came to fruition out of frustration with my wired earbuds.
-                        <br>
+                        <br><br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/earbuds_cad.png">
+                        <img src="portfolio/proj_pics/earbuds_front.jpg">
+                        <img src="portfolio/proj_pics/earbuds_back.jpg">
+                    </div>
                         <br>
                     Unsatisfied with every wired earbud case on the market and annoyed with my constantly tangled wired earbuds, I decided to make one.
                     Modeling the case entirely in SolidWorks and going through 4 different iterations, I eventually landed on this - a wired earbud case that also serves as a fidget spinner.
@@ -375,98 +489,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     </p>
                     <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], 3D Printing [Bambu P1P, PLA], Prototyping</p>
-                    <br>
-                </div>
-                <div class = "desc" id = "suction">
-                    <h3> 07/09/2026 - 08/07/2026 </h3>
-                    <br>
-                    <h2> Suction Valve Release Mechanism - GD 2026 Internship </h2>
-                    <br>
-                    <p>Overview: I worked on several projects at GD Energy Products' Plant 27 in Conroe, TX, involving 
-                        design work, prototyping, manufacturing, assembly and testing, 
-                        Design of Experiments (DOEs), Standards of Procedures (SOPs), and a full 3D model of the plant in Autodesk Inventor.
-                        I will focus on the 3 main projects I saw from initial design through to complete fabrication.
-                        <br><br>
-                    <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/suction_top.jpg">
-                        <img src="portfolio/proj_pics/jaw_displacement.png">
-                        <img src="portfolio/proj_pics/suction_team1.png">
-                    </div>
-                        <br>
-                    Problem: Removing the suction valve insert from the suction valve after performing a fitment test is a stored-energy release concern if done using the previous procedure which was to pry it off with a putty knife. 
-                        <br><br>
-                    Goal: Develop a tool that can safely separate the suction valve from the valve body post-fitment test and preserve the suction valve. 
-                        <br><br>
-                    Product: 6-Jaw carbon-steel lever release mechanism. Worker applies downward force using the arbor press to an aluminum puck which uniformly presses on the jaws, creating a moment
-                    which levers the suction valve off of the valve body and into the cavity inside the aluminum puck. 
-                        <br><br>
-                    Takeaways: Ease of use is critical, as the workers will be using this mechanism for every fitment test several times a day. To improve this, I designed and 3D printed a 
-                    jacket that fits around the jaw, creating a flat surface to use a soft-blow mallet on to drive the jaw into the crevice easily. 
-                    Additionally, I conducted a solids analysis of the jaws, determining the forces it will undergo, and plugged these into the FEA. Once I got the FEA's max displacement value, 
-                    I conducted a deformation analysis to see if the displacement value from the FEA was within the elasticity region of the jaw. 
-                        <br>
-                    </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
-                </div>
-                <div class = "desc" id = "gauge">
-                    <h3> 06/11/2026 </h3>
-                    <br>
-                    <h2> Go/No-Go Gauge - GD 2026 Internship </h2>
-                    <br>
-                    <p>Overview: This project tested my ability to tolerance, CAM, effectively follow set-up procedures, and learn to CNC mill.
-                        My tools for this project included Fusion and the PNC Tormach 1100.
-                        I learned to export NC programs, use soft-jaws, and explore different smoothening operations to achieve the ball in cube.
-                        <br><br>
-                    <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/gauge_resting.jpg">
-                        <img src="portfolio/proj_pics/gauge_drawing.png">
-                        <img src="portfolio/proj_pics/gauge_action.jpg">
-                    </div>
-                        <br>
-                    Problem: Haliburton rejected 73 suction valve inserts produced by the injection molding machines at Plant 27. 
-                    Molds for the single-cavity and 8-cavity Haitian machines were reworked to the low-end of the tolerance to solve the issue, 
-                    but we needed a way for workers to quickly visually inspect these new parts before sending them to Haliburton as individually scanning each part would significantly backlog production.
-                        <br><br>
-                    Goal: Create an instrument for factory workers in plastics to visually inspect the +0.000, -0.005 tolerance on the 0.180” dimension of the Z1290-6678K part 
-                    that fits onto Haliburton's fluid end valve bodies before shipping them.
-                        <br><br>
-                    Product: Designed and manufactured an Aluminum Go/No-Go Gauge that workers now use to check the 0.180 dimension of the Z1290-6678K parts coming out of the injection molding machines.
-                        <br><br>
-                    Takeaways: Ease of use, manufacturability, and working under a tight deadline. Designed the gauge to follow the same structure of a toothbrush, making it ergonomic and easy for workers to use.
-                    The gauge had to be designed immediately as an audit was being conducted the next day and there needed to be an inspection method in place to show control of this dimension.
-                        <br>
-                    </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
-                    <br>
-                </div>
-                <div class = "desc" id = "mold">
-                    <h3> 06/22/2026 - 07/24/2025 </h3>
-                    <br>
-                    <h2> Mold Preparation Extension Tool - GD 2026 Internship </h2>
-                    <br>
-                    <p>Overview: This project tested my ability to tolerance, CAM, effectively follow set-up procedures, and learn to CNC mill.
-                        My tools for this project included Fusion and the PNC Tormach 1100.
-                        I learned to export NC programs, use soft-jaws, and explore different smoothening operations to achieve the ball in cube.
-                        <br><br>
-                    Problem: Workers walking behind the press to brush the mold between cycles is a near-miss for damaging the complex pneumatic system.
-                        <br><br>
-                    Goal: Create an extension tool for the wire brushes used in the press shop that enables workers to clean the mold from the front and side without going behind the press
-                    while also being lightweight, durable, heat-resistant, and adjustable.
-                        <br><br>
-                    Product: Aluminum-based extension tool with 3 adjustable lengths to access the front and back of the mold cavities without interfering with the plumbing behind the press.
-                        <br><br>
-                    Takeaways: Weight reduction for this tool was critical since the workers will be using this tool every 10 minutes. For the standardized version of this tool,
-                    it will be made from PEEK, a thermoplastic with high heat-resistance and roughly half the density of aluminum. Additionally, the inner rod will be hollowed for further weight reduction.
-                        <br>
-                    </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Prototyping</p>
                     <br>
                 </div>
                 <div class = "desc" id = "cnc">
@@ -477,11 +500,20 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <p>Overview: This project tested my ability to tolerance, CAM, effectively follow set-up procedures, and learn to CNC mill.
                         My tools for this project included Fusion and the PNC Tormach 1100.
                         I learned to export NC programs, use soft-jaws, and explore different smoothening operations to achieve the ball in cube.
-                        <br>
+                        <br><br>
                     </p>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/cnc_stock.jpg">
+                        <img src="portfolio/proj_pics/cnc_action1.jpg">
+                        <img src="portfolio/proj_pics/ball_in_cube_fr.png">
+                    </div>
+                        <br>
+                    One of my biggest takeaways from this project was that awareness in the shop is critical. 
+                    During this project, I broke my first endmill. As the endmill was clearing one of the pockets, the flutes gunked severely due to reaching nearly maximum engagement with the material.
+                    I learned a valuable lesson which was to constantly observe the operation at hand for signs of tool wear or gunking to prevent tool breakage.
                     <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
+                    <p>Technical Skills Used: 3D CAD [Fusion], 3D CAM [Fusion] Precision Machining</p>
                     <br>
                 </div>
                 <div class = "desc" id = "model_rocket">
@@ -503,9 +535,9 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                         I followed the same press-fit tolerance principles when machining the Launch Abort System of the nose and voila!
                         To add to the grandiose, the thrust was printed in clear PETG filament and illuminated using some LEDs embedded in its core.
                     <br>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
+                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], Precision Machining</p>
+                    <p>Technical Skills Used: 3D CAD [OnShape], Precision Machining</p>
                     <br>
                 </div>
             </div>
@@ -555,11 +587,10 @@ lastly, getElementById gets the <div> element associated with the desc ID and ad
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <br>
-                <br>
                 <a href="mailto:rrajesh195@outlook.com"><i class="fa-regular fa-envelope"></i></a>     rrajesh195@outlook.com
                 <br>
                 <a href="tel:+1-832-214-8224"><i class="fa-solid fa-mobile-screen"></i></a>     832-214-8224
-                <br>
+                <br><br><br>
             </div>
         </div>
     </div>
