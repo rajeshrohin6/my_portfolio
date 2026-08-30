@@ -311,6 +311,10 @@ nav ul li a:hover::after{
         font-size: 30px;
 
     }
+
+    #header, #about, #portfolio, #skills, #contact {
+        scroll-margin-top: 200px;
+    }
     
     .work-desc-list{
         margin-top: 50px;
