@@ -1,5 +1,5 @@
 <!--
-fixed 8-30-26
+fixed 8-30-26 10:55pm
 first link connects the css file portfolio_style.css to this html file
 UTF-8 is a character set that includes basically all characters so I can use special characters if i want
 viewport sets the width of the screen to the width of the device so it can open cleanly on mobile devices too
@@ -36,7 +36,7 @@ nav contains the list of all containers in the website. the href code implies th
 <div id = "header">
     <div class = "container">
         <nav>
-            <img src="portfolio/portfolio_logo2.png" class="logo">
+            <a href="#header"><img src="portfolio/portfolio_logo2.png" class="logo"></a>
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -384,8 +384,8 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <br>
                     <h2> Go/No-Go Gauge - GD 2026 Internship </h2>
                     <br>
-                    <p>Overview: I designed a tolerance-checking go/no-go gauge which workers use to test whether parts are meeting spec throughout their shift.
-                        This project was assigned to me immediately after the molds were reworked, so I completed the design and sent it for manufacturing by the end of that same day.
+                    <p>Overview: I designed a unilateral tolerance-checking go/no-go gauge which workers use to test whether parts are meeting spec throughout their shift.
+                        This project was assigned to me immediately after the molds were reworked, so I completed the design and sent it for manufacturing by the end of that same day before a quality audit the following day.
                         <br><br>
                     <div class = "extra_pics">
                         <img src="portfolio/proj_pics/gauge_resting.jpg">
@@ -398,9 +398,9 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     but we needed a way for workers to quickly visually inspect these new parts before sending them to Haliburton as individually 3D-laser scanning each part would significantly backlog production.
                         <br><br>
                     Goal: Create an instrument for factory workers in plastics to visually inspect the +0.000, -0.005 tolerance on the 0.180" dimension of the Z1290-6678K part
-                    that fits onto Haliburton's fluid end valve bodies before shipping them.
+                    that fits onto Haliburton's fluid end valve bodies.
                         <br><br>
-                    Product: Designed and manufactured an Aluminum Go/No-Go Gauge that workers use to check the 0.180 dimension of the Z1290-6678K parts coming out of the injection molding machines.
+                    Product: Designed and manufactured an Aluminum 6061 Go/No-Go Gauge that workers use to check the tolerance of the 0.180" dimension coming out of the reworked injection molding machines.
                     This gauge took what was initially a 5-minute long inspection process and reduced it to a 10-second dimension check, creating a 97% reduction in inspection time.
                         <br><br>
                     Takeaways: Ease of use, manufacturability, and working under a tight deadline. I designed the gauge to follow the same structure of a toothbrush, making it ergonomic and easy for workers to use.
