@@ -1,4 +1,4 @@
-/* ----------Home Page---------- */
+/* -- Home Page -- */
 
 *{
     margin: 0;
@@ -94,7 +94,7 @@ nav ul li a:hover::after{
 }
 
 
-/* ----------About---------- */
+/* -- About -- */
 
 #about{
     margin-top: 80px;
@@ -177,17 +177,11 @@ nav ul li a:hover::after{
     display: none;
 }
 
-#skills.tab-contents.active-tab{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .tab-contents.active-tab{
     display: block;
 }
 
-/* ----------Project Experience---------- */
+/* -- Project Experience -- */
 
 .exp_container{
     display: flex;
@@ -281,7 +275,31 @@ nav ul li a:hover::after{
     width: 30%;
 }
 
-/* ---------- Contact Me ---------- */
+
+/* -- Skills -- */
+.skills-heading {
+    color: rgb(191, 87, 0);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    gap: 12px 20px;
+}
+
+.skills-list li {
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+/* -- Contact Me -- */
 
 .contact-left.sub-title{
     position: relative;
@@ -292,7 +310,7 @@ nav ul li a:hover::after{
     margin-top: 50%;
 }
 
-/* ---------- CSS for Small Screens ---------- */
+/* -- CSS for Small Screens -- */
 
 @media only screen and (max-width: 600px){
     #header{
