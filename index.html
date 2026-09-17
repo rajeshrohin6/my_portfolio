@@ -1,5 +1,5 @@
 <!--
-fixed 8-30-26 attempt 2
+fixed 9-17-26
 first link connects the css file portfolio_style.css to this html file
 UTF-8 is a character set that includes basically all characters so I can use special characters if i want
 viewport sets the width of the screen to the width of the device so it can open cleanly on mobile devices too
@@ -40,8 +40,8 @@ nav contains the list of all containers in the website. the href code implies th
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -52,7 +52,7 @@ nav contains the list of all containers in the website. the href code implies th
     </div>
 </div>
 
-<!---------- About ---------->
+<!-- About -->
 
 <div id="about">
     <div class="container">
@@ -62,55 +62,23 @@ nav contains the list of all containers in the website. the href code implies th
             </div>
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
-                <p>Eagle Scout and honors mechanical engineering student at the University of Texas at Austin with a passion for structural engineering.
+                <p>Honors mechanical engineering student at the University of Texas at Austin with a passion for structural engineering.
                     <br><br>
             I led the 15-member structures team for Texas Flight (DBF) in the 2025-26 AIAA DBF Competition where I developed extensive experience with composite materials and advanced materials manufacturing methods. 
             Additionally, I led the machine shop team at Texas Inventionworks (TIW) from 2025-26 with experience in milling, lathing, and CNC operations. 
             At TIW, I train students in the Machine Shop, DFAB, and Laser Cutting spaces, helping others hone their knowledge and skills in industry-level fabrication techniques. 
             Further, I've built experience in root-cause analysis, data collection, and optimization through engine efficiency and spark plug degradation research with the UT Engine Group under Dr. Matthew Hall.
                     <br><br>
-            I'm versed in Python and MATLAB, I've designed several projects in CAD using SolidWorks, Autodesk Inventor, and OnShape, and I've brought my projects into the real world via manual and CNC machining using CAM in Fusion360 and SolidCAM. 
+            I've designed several projects in CAD using SolidWorks, Autodesk Inventor, and OnShape, and I've brought my projects into the real world via manual and CNC machining using CAM in Fusion360 and SolidCAM. 
             I bring strong leadership, teambuilding, and organizational skills to every project I work on.
                     <br><br>
             Always happy to connect and chat about opportunities! Please feel free to reach out at rrajesh195@outlook.com. 
                 </p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>                                        
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span><strong>Durable Skills</strong></span></li>
-                        <li>Project Management</li>
-                        <li>Leadership</li>
-                        <li>Problem Solving</li>
-                        <li>Team Collaboration</li>
-                        <li>Effective Communication</li>
-                        <li>Time Management</li>
-                        <li>Adaptability</li>
-                        <li>Creativity</li>
-                    </ul>
-                    
-                    <ul>
-                        <li><span><strong>Technical Skills</strong></span></li>
-                        <li>3D CAD</li>
-                        <li>3D CAM</li>
-                        <li>Additive Manufacturing</li>
-                        <li>Composites/Advanced Materials</li>
-                        <li>Precision Machining</li>
-                        <li>Prototyping</li>
-                        <li>Quantitative Analysis</li>
-                        <li>Root-Cause Analysis</li>
-                        <li>Python</li>
-                        <li>MATLAB</li>
-                        <li>HTML/CSS/JS</li>
-                        <li>Soldering</li>
-                        <li>Laser Cutting</li>
-                        <li>Microsoft Suite</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
+                <div class="tab-contents active-tab" id="experience">
                     <ul>
                         <li><span>Dec. 2024 - Present</span><br>CNC Machinist / Student Technician - Texas Inventionworks</li>
                         <li><span>Aug. 2025 - May 2026</span><br>Structures & Composites Lead - Texas Flight</li>
@@ -167,7 +135,7 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
 
 </script>
 
-<!---------- Experience Images ---------->
+<!-- Experience Images -->
 
 <div id="portfolio">
     <div class="container">
@@ -182,19 +150,11 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                         </h3>
                     </div>
                 </div>
-                <div class="work" onclick="openwork('pen')">
-                    <img src="portfolio/proj_pics/completed_pen.jpg">
+                <div class="work" onclick="openwork('nose_gear')">
+                    <img src="portfolio/proj_pics/nose_gear_integrated.jpg">
                     <div class="layer">
                         <h3>
-                            Clickable Brass Pen
-                        </h3>
-                    </div>
-                </div>
-                <div class="work" onclick="openwork('engine')">
-                    <img src="portfolio/proj_pics/single_cylinder.jpg">
-                    <div class="layer">
-                        <h3>
-                            Undergraduate Research - UT Engine Group
+                            Suspension-Based Nose Gear
                         </h3>
                     </div>
                 </div>
@@ -219,6 +179,30 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     <div class="layer">
                         <h3>
                             Mold Prep Extension Tool - GD 2026 Intern
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('pen')">
+                    <img src="portfolio/proj_pics/completed_pen.jpg">
+                    <div class="layer">
+                        <h3>
+                            Clickable Brass Pen
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('engine1')">
+                    <img src="portfolio/proj_pics/single_cylinder.jpg">
+                    <div class="layer">
+                        <h3>
+                            Single-Cylinder Engine Research - UT Engine Group
+                        </h3>
+                    </div>
+                </div>
+                <div class="work" onclick="openwork('engine2')">
+                    <img src="portfolio/proj_pics/spark_plug.jpg">
+                    <div class="layer">
+                        <h3>
+                            Spark Plug Research - UT Engine Group
                         </h3>
                     </div>
                 </div>
@@ -256,13 +240,17 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                 </div>
             </div>
 
-<!---------- Experience Work Descriptions ---------->
+<!-- Experience Work Descriptions -->
 
             <div class = "work-desc-list">
                 <div class = "desc active-desc" id = "plane">
-                    <h3> 08/25/2024 - 05/04/2026 </h3>
+                    <h3> 02/08/2026 - 03/15/2026 </h3>
                     <br>
-                    <h2> RC Plane Composites </h2>
+                    <h2> RC Plane Composites - Texas Flight [Design/Build/Fly] </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [CFRP, PLA, PETG], Composites/Advanced Materials, Prototyping, Laser Cutting, Microsoft Suite</p>
+                    <br>
+                    <p>Soft Skills Used: Project Management, Leadership, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: Texas Flight is UT Austin's Design, Build, Fly [DBF] team that competes in AIAA's international RC plane competition.
                         As a member of the structures team on Texas Flight from Aug. 2024 - May 2025, I worked with a team of 10 in performing composite wet layups for the fuselage and landing gear.
@@ -280,84 +268,52 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                         I worked with the Chief Engineer and CAD lead to design a plane that not just meets competition guidelines but scores exceptionally in all 3 missions.
                         Additionally, I owned the design of the aluminum-based, CFRP-supported nose gear of the plane with a single-strut suspension system serving to alleviate high landing forces.
                         <br>
-                        <br>
                     </p>
-                    <p>Durable Skills Used: Project Management, Leadership, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [CFRP, PLA, PETG], Composites/Advanced Materials, Prototyping, Laser Cutting, Microsoft Suite</p>
-                    <br>
                 </div>
-                <div class = "desc" id = "pen">
-                    <h3> 11/03/2025 - 12/08/2025 </h3>
+                <div class = "desc" id = "nose_gear">
+                    <h3> 07/09/2026 - 08/07/2026 </h3>
                     <br>
-                    <h2> Clickable Brass Pen </h2>
+                    <h2> Suspension-Based Nose Gear - Texas Flight [Design/Build/Fly] </h2>
                     <br>
-                    <p>Overview: I designed and manufactured a clickable pen out of brass as an instructable project for the Texas Inventionworks [TIW] Machine Shop.
-                        An instructable is a project that student staff at TIW can create along with instructions for interested students to build for themselves.
-                        Once all documentation has been created, projects are then added to the display case for students to observe along with QR codes linked to the instructions.
-                        <br>
-                        <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], 3D CAM [SolidCAM], Additive Manufacturing [PETG], Precision Machining, Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
+                    <br>
+                    <p>Overview: I owned the design and fabrication of an Aluminum 6061, CFRP supported single-strut suspension based nose gear for Texas Flight's 2026 Competition Plane designed to alleviate
+                        high landing stresses during our 50-lb heavy Mission 2 configuration. I conducted FEA and physically load-tested the gear to support 3Gs of dynamic loading.
+                        <br><br>
                     <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/pen_turning.jpg">
-                        <img src="portfolio/proj_pics/pen_nose.jpg">
-                        <img src="portfolio/proj_pics/pen_mill.jpg">
+                        <img src="portfolio/proj_pics/nose_gear_exploded.png">
+                        <img src="portfolio/proj_pics/nose_gear_milling.jpg">
+                        <img src="portfolio/proj_pics/nose_gear_setup.jpg">
                     </div>
                         <br>
-                        The instructable for this project is linked <a href="https://www.instructables.com/TIW-Clickable-Brass-Pen">here.</a><br>
-                        <br>
-                        Since I created this from scratch, it required several iterations during the design process to ensure a reliable clicking mechanism.
-                        The final CAD was designed in SolidWorks and the drawing sheets are linked <a href="https://drive.google.com/file/d/1dWUasaUazbKOP9U-Iio5Rd7OLEZiPNA8/view?usp=sharing">here.</a><br>
+                    The previous year, our nose gear plastically deformed on landing during Mission 2. Though we scraped by that time, we were planning on carrying an even larger payload this year.
+                    So, we needed a landing gear that could perform.
+                        <br><br>
+                    I went through 3 iterations before landing (pun intended) on the nose gear seen here. It uses a 72lb/in stiffness spring with a wheel housing unit (bottom) that slides into the strut housing (top).
+                    The linkage on the side is Nylon/Carbon printed and keeps the wheel housing unit from rotating within the strut housing.
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Precision Machining, Prototyping</p>
-                    <br>
-                </div>
-                <div class = "desc" id = "engine">
-                    <h3> 08/26/2024 - Present </h3>
-                    <br>
-                    <h2> Undergraduate Research </h2>
-                    <br>
-                    <p>Overview: Working with a team of 5 under my Thermodynamics Professor Dr. Matthew Hall, I have worked on two research projects.
-                        For our first project, we were tasked with determining the most efficient running conditions of the UT Engine Group's single-cylinder gasoline engine.
-                        Using a National Instruments LabView program, we modified the spark timing, dwell time, air-fuel ratio, fuel injection timing and duration, and the mean effective pressure.
-                        For our second and current project, we are analyzing the current breakdown event of spark plugs under pressurized conditions to determine degradation mitigation strategies.
-
                         <br>
-                        <br>
-                    <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/research_prof.jpg">
-                        <img src="portfolio/proj_pics/research_dual.jpg">
-                        <img src="portfolio/proj_pics/research_plugs.jpg">
-                    </div>
-                        <br>
-                        Throughout the research process, we dealt with several issues including the spark plug firing on the wrong edge of the engine stroke, LabView connection failures, the flywheel falling out of callibration, and engine knocking.
-                        Equipped with a stroboscopic light, digital osciloscope, encoders, a manometer, and pressure transducer, we were able to troubleshoot these problems using root cause analysis methods.
-                        For our first experiment, we changed the duration of the fuel injection, ultimately varying the air-fuel ratio.
-                        In our second experiment, we changed the spark control timing using a sweep procedure. 
-                        Ultimately, we presented our findings at FIRE's annual conference to a group of researchers and engineering professors. 
-                        <br>
-                        <br>
-                        Currently, I am engaged in a research project where we are analyzing the current breakdown event of spark plugs under pressurized conditions
-                        to determine degradation mitigation strategies.
-                        This project is aiding an ongoing research project led by Gabriel Brito under Dr. Matthew Hall. 
-                        <br>
-                        </p>
-                    <p><br>Durable Skills Used: Project Management, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: Quantitative Analysis, Root-Cause Analysis, MATLAB, Soldering, Microsoft Suite</p>
-                    <br>
+                    I first conducted FEA on the wheel housing unit to ensure my thin walls supporting the wheel axle could handle the bearing stress. From there, I load tested the gear to 3Gs statically. 
+                    Using a 3D printed a fixture that rests on top of the plane, I loaded the plane with cinder blocks until I reached my loading weight.
+                    After that, it came down to flight testing and making incremental improvements, including fixes to the linkage locking and spring binding.
+                    </p>
                 </div>
                 <div class = "desc" id = "suction">
                     <h3> 07/09/2026 - 08/07/2026 </h3>
                     <br>
                     <h2> Suction Valve Release Mechanism - GD 2026 Internship </h2>
                     <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], 3D CAM [SolidCAM], Additive Manufacturing [PETG], Precision Machining, Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
+                    <br>
                     <p>Overview: I designed a release mechanism used after factory workers complete a fitment test which separates the suction valve from the valve body while preserving the suction valve 
                         and avoiding a stored-energy release hazard caused by the previous removing technique.
                         <br><br>
                     <div class = "extra_pics">
-                        <img src="portfolio/proj_pics/suction_top.jpg">
+                        <img src="portfolio/proj_pics/jaw_written.jpg">
                         <img src="portfolio/proj_pics/jaw_displacement.png">
                         <img src="portfolio/proj_pics/suction_team1.png">
                     </div>
@@ -375,14 +331,15 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     I conducted a deformation analysis to see if the displacement value from the FEA was within the elasticity region of the jaw. 
                         <br>
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], 3D CAM [SolidCAM], Additive Manufacturing [PETG], Precision Machining, Prototyping</p>
-                </div>
+                    </div>
                 <div class = "desc" id = "gauge">
                     <h3> 06/11/2026 </h3>
                     <br>
                     <h2> Go/No-Go Gauge - GD 2026 Internship </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Effective Communication, Time Management, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: I designed a unilateral tolerance-checking go/no-go gauge which workers use to test whether parts are meeting spec throughout their shift.
                         This project was assigned to me immediately after the molds were reworked, so I completed the design and sent it for manufacturing by the end of that same day before a quality audit the following day.
@@ -407,15 +364,15 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     As for the deadline, the gauge had to be designed immediately as an audit was being conducted the next day and we needed to show there was an inspection method in place controlling this dimension.
                         <br>
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
-                    <br>
                 </div>
                 <div class = "desc" id = "mold">
                     <h3> 06/22/2026 - 07/24/2025 </h3>
                     <br>
                     <h2> Mold Preparation Extension Tool - GD 2026 Internship </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: I designed a 2-in-1 standardized tool for factory workers to prepare the mold for composite compression molding while preventing future near-miss incidents.
                         <br><br>
@@ -436,15 +393,93 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     it will be made from PEEK, a thermoplastic with high heat-resistance and roughly half the density of aluminum. Additionally, the inner rod will be hollowed for further weight reduction.
                         <br>
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Effective Communication, Adaptability, Creativity</p>
+                </div>
+                <div class = "desc" id = "pen">
+                    <h3> 11/03/2025 - 12/08/2025 </h3>
                     <br>
-                    <p>Technical Skills Used: 3D CAD [Autodesk Inventor], Precision Machining, Prototyping</p>
+                    <h2> Clickable Brass Pen </h2>
                     <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Precision Machining, Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
+                    <br>
+                    <p>Overview: I designed and manufactured a clickable pen out of brass as an instructable project for the Texas Inventionworks [TIW] Machine Shop.
+                        An instructable is a project that student staff at TIW can create along with instructions for interested students to build for themselves.
+                        Once all documentation has been created, projects are then added to the display case for students to observe along with QR codes linked to the instructions.
+                        <br>
+                        <br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/pen_turning.jpg">
+                        <img src="portfolio/proj_pics/pen_nose.jpg">
+                        <img src="portfolio/proj_pics/pen_mill.jpg">
+                    </div>
+                        <br>
+                        The instructable for this project is linked <a href="https://www.instructables.com/TIW-Clickable-Brass-Pen">here.</a><br>
+                        <br>
+                        Since I created this from scratch, it required several iterations during the design process to ensure a reliable clicking mechanism.
+                        The final CAD was designed in SolidWorks and the drawing sheets are linked <a href="https://drive.google.com/file/d/1dWUasaUazbKOP9U-Iio5Rd7OLEZiPNA8/view?usp=sharing">here.</a><br>
+                    </p>
+                </div>
+                <div class = "desc" id = "engine1">
+                    <h3> 08/26/2024 - Present </h3>
+                    <br>
+                    <h2> Single-Cylinder Engine Research - UT Engine Group </h2>
+                    <br>
+                    <p>Technical Skills Used: Quantitative Analysis, Root-Cause Analysis, MATLAB, Soldering, Microsoft Suite</p>
+                    <br>
+                    <p>Soft Skills Used: Project Management, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
+                    <br>
+                    <p>Overview: Working with a team of 5 under my Thermodynamics Professor Dr. Matthew Hall, I have worked on two research projects.
+                        For our first project, we were tasked with determining the most efficient running conditions of the UT Engine Group's single-cylinder gasoline engine.
+                        Using a National Instruments LabView program, we modified the spark timing, dwell time, air-fuel ratio, fuel injection timing and duration, and the mean effective pressure.
+                        <br>
+                        <br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/research_prof.jpg">
+                        <img src="portfolio/proj_pics/engine_plc.jpeg">
+                        <img src="portfolio/proj_pics/engine_ratio.jpg">
+                    </div>
+                        <br>
+                        Throughout the research process, we dealt with several issues including the spark plug firing on the wrong edge of the engine stroke, LabView connection failures, the flywheel falling out of callibration, and engine knocking.
+                        Equipped with a stroboscopic light, digital osciloscope, encoders, a manometer, and pressure transducer, we were able to troubleshoot these problems using root cause analysis methods.
+                        For our first experiment, we changed the duration of the fuel injection, ultimately varying the air-fuel ratio.
+                        In our second experiment, we changed the spark control timing using a sweep procedure. 
+                        Ultimately, we presented our findings at FIRE's annual conference to a group of researchers and engineering professors. 
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class = "desc" id = "engine2">
+                    <h3> 08/26/2024 - Present </h3>
+                    <br>
+                    <h2> Spark Plug Degradation Mitigation Research - UT Engine Group </h2>
+                    <br>
+                    <p>Technical Skills Used: Quantitative Analysis, Root-Cause Analysis, MATLAB, Soldering, Microsoft Suite</p>
+                    <br>
+                    <p>Soft Skills Used: Project Management, Problem Solving, Team Collaboration, Effective Communication, Time Management, Adaptability</p>
+                    <br>
+                    <p>Overview: For my second and current project, I am working with a team of 5 to analyze the current breakdown event of spark plugs under pressurized conditions and determine degradation mitigation strategies.
+                        <br><br>
+                    <div class = "extra_pics">
+                        <img src="portfolio/proj_pics/spark_plug.jpg">
+                        <img src="portfolio/proj_pics/research_dual.jpg">
+                        <img src="portfolio/proj_pics/research_plugs.jpg">
+                    </div>
+                        <br>
+                        Currently, I am engaged in a research project where we are analyzing the current breakdown event of spark plugs under pressurized conditions
+                        to determine degradation mitigation strategies.
+                        This project is aiding an ongoing research project led by Gabriel Brito under Dr. Matthew Hall. 
+                        <br>
+                    </p>
                 </div>
                 <div class = "desc" id = "macropad">
                     <h3> 03/03/2025 - 04/07/2025 </h3>
                     <br>
                     <h2> Macropad Keyboard Extension </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks, OnShape], Additive Manufacturing [PETG], Prototyping, Soldering, Laser Cutting</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: I designed, soldered, and coded a macropad as a keyboard extension for my computer.
                         I modeled the casing in SolidWorks and printed it using a Bambu P1P in PLA, and the keypads were modeled in OnShape and printed in PETG.
@@ -465,15 +500,15 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                         I used the numerical keypad configuration for my accounting class as a part of my Business Foundations Minor and will continue to use this for future Business and Engineering classes.
                         This project served as a demonstration of using the skills I've gained in 3D CAD and electronics to create a functional assembly.
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks, OnShape], Additive Manufacturing [PETG], Prototyping, Soldering, Laser Cutting</p>
-                    <br>
                 </div>
                 <div class = "desc" id = "earbuds">
                     <h3> 10/07/2024 - 11/13/2024 </h3>
                     <br>
                     <h2> Wired Earbuds Case </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Prototyping</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: This project came to fruition out of frustration with my wired earbuds.
                         <br><br>
@@ -488,15 +523,15 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     This project tested my ability to work around design challenges such as dimensioning, ease of use, and manufacturability. 
                     <br>
                     </p>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [SolidWorks], Additive Manufacturing [PLA], Prototyping</p>
-                    <br>
                 </div>
                 <div class = "desc" id = "cnc">
                     <h3> 10/04/2025 - 10/30/2025 </h3>
                     <br>
                     <h2> Aluminum Ball in Cube </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [Fusion], 3D CAM [Fusion] Precision Machining</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Time Management, Adaptability</p>
                     <br>
                     <p>Overview: This project tested my ability to tolerance, CAM, effectively follow set-up procedures, and learn to CNC mill.
                         My tools for this project included Fusion and the PNC Tormach 1100.
@@ -512,15 +547,16 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                     One of my biggest takeaways from this project was the importance of recognizing tool-wear. 
                     I broke my first endmill while conducting a scallop operation for the ball. Clearing one of the pockets, the compressed air access got blocked by the part right as the endmill reached nearly maximum engagement, causing severe gunking and snapping the endmill.
                     Learning from this, now I take the time to review the simulated operation for situations that create excessive load for the tool before exporting the NC programs and executing the operation.
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [Fusion], 3D CAM [Fusion] Precision Machining</p>
-                    <br>
+                    
                 </div>
                 <div class = "desc" id = "model_rocket">
                     <h3> 04/25/2026 - 04/27/2026 </h3>
                     <br>
                     <h2> Aluminum Model Rocket </h2>
+                    <br>
+                    <p>Technical Skills Used: 3D CAD [OnShape], Precision Machining</p>
+                    <br>
+                    <p>Soft Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
                     <br>
                     <p>Overview: Inspired by the NASA Artemis II mission, I modeled the SLS rocket in OnShape and decided to machine the entire assembly as a gift for a good friend of mine who also happens to be a crazy rocket enthusiast.
                         <br><br>
@@ -535,10 +571,6 @@ lastly, getElementById gets the <div> element associated with the tabname ID and
                         For the launch vehicle stage adapter and Orion capsule, I tapered them on the lathe, turned the LVSA to a press-fit tolerance of 0.001", milled out the window for the Calihorn astronaut to check out the view, and used an arbor press to assemble the components.
                         I followed the same press-fit tolerance principles when machining the Launch Abort System of the nose and voila!
                         To add to the grandiose, the thrust was printed in clear PETG filament and illuminated using some LEDs embedded in its core.
-                    <br>
-                    <p><br>Durable Skills Used: Problem Solving, Time Management, Adaptability, Creativity</p>
-                    <br>
-                    <p>Technical Skills Used: 3D CAD [OnShape], Precision Machining</p>
                     <br>
                 </div>
             </div>
@@ -581,7 +613,42 @@ lastly, getElementById gets the <div> element associated with the desc ID and ad
 
 </script>
 
-<!---------- Contact Me ---------->
+<!-- Skills -->
+<div id="skills">
+    <div class="container" id="skills">
+    <h3 class = "skills-heading"> Technical Skills </h3>                
+    <ul class = "skills-list">
+        <li>3D CAD</li>
+        <li>3D CAM</li>
+        <li>Additive Manufacturing</li>
+        <li>Composites/Advanced Materials</li>
+        <li>Precision Machining</li>
+        <li>Prototyping</li>
+        <li>Quantitative Analysis</li>
+        <li>Root-Cause Analysis</li>
+        <li>Python</li>
+        <li>MATLAB</li>
+        <li>HTML/CSS/JS</li>
+        <li>Soldering</li>
+        <li>Laser Cutting</li>
+        <li>Microsoft Suite</li>
+    </ul>
+    <h3 class = "skills-heading"> Soft Skills </h3>
+    <ul class = "skills-list">
+        <li>Project Management</li>
+        <li>Leadership</li>
+        <li>Problem Solving</li>
+        <li>Team Collaboration</li>
+        <li>Effective Communication</li>
+        <li>Time Management</li>
+        <li>Adaptability</li>
+        <li>Creativity</li>
+    </ul>       
+    </div>
+</div>   
+
+<!-- Contact Me -->
+
 <div id="contact">
     <div class = "container">
         <div class="row">
